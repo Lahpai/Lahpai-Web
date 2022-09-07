@@ -1,0 +1,47 @@
+body {
+    background-color:antiquewhite;
+    
+}
+
+h1{
+    color: darkcyan;
+    font-size: 200%;
+}
+
+h3 {
+    color: darkcyan;
+}
+
+#x{
+    font-family: Courier;
+}
+
+p span {
+    color:blueviolet;
+}
+
+#y {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.x {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.y {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.z {
+    color: brown;
+}
+
+.a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 13px;
+}
