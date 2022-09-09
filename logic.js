@@ -33,44 +33,15 @@ function isVowel(ch){
 }
 console.log(isVowel('u'));
 
-// function isVowel(z) {
-//     switch(z) {
-//         case "a": console.log("Vowel");
-//         break;
-//         case "e": console.log("Vowel");
-//         break;
-//         case "i": console.log("Vowel");
-//         break;
-//         case "o": console.log("Vowel");
-//         break;
-//         case "u": console.log("Vowel");
-//         break;
-//         default: console.log("Not Vowel");
-//     }
-// }
 
 /*4 Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. 
 For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24. */
-// function sum(arr=[]){
-// return arr.reduce((a,b)=>a+b,0);
-// }
-// console.log(sum([1,2,3,4]));
-
-//sum
-// function sum(array){
-//     let result=0;
-//     for(let i=0; i<array.length; i++){
-// result+=array[i];
-//     }
-//     return result;
-// }
-// console.log(sum([1,2,3,4]));
 
 
-function sum(array) {
+function sum(arr) {
     let total = 0;
-    for(let i=0; i<array.length; i++) {
-        total += array[i];
+    for(let i=0; i<arr.length; i++) {
+        total += arr[i];
     }
     return total;
 }
@@ -78,10 +49,10 @@ console.log(sum([1,2,3,4]));
 
 
 //multiply
-function mul(array){
+function mul(arr){
     let prod=1;
-    for(let i=0; i<array.length; i++){
-prod*=array[i];
+    for(let i=0; i<arr.length; i++){
+prod*=arr[i];
     }
     return prod;
 }
@@ -89,13 +60,6 @@ console.log(mul([1,2,3,4]));
 
 //5 Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 
-// function reverse(arr){
-//     let s='';
-// for(let i=arr.length-1; i>=0; i--)
-// s+=arr[i];
-// return s;
-// }
-// console.log(reverse("mahi"));
 
 function reverse(s)
 { 
@@ -109,20 +73,6 @@ function reverse(s)
 
 //6 Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
 
-// function findLongestWord(arr=[]){
-//     let max=arr[0].length;
-//     let count=0;
-// for(let i=1; i<arr.length; i++){
-//         if(arr[i].length>max){
-//             count=i;
-//             max=arr[i].length;
-//         }
-// }
-// return max; 
-//     }
-
-// console.log(findLongestWord(["hi","hola","hello","bonjour"]));
-
 function findLongestWord(words)
 {
     let longestWord="";
@@ -133,9 +83,10 @@ function findLongestWord(words)
     }
     return longestWord;
 }
+console.log(findLongestWord(["hi","hola","hello","bonjour"]));
+
 
 //7 Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
-
 
 function filterLongWords(arr, n){
     let newArr = [];
@@ -146,7 +97,7 @@ function filterLongWords(arr, n){
     return newArr;
 }
 
-console.log(filterLongWords(["hi","hola","hello","bonjour"],4));
+console.log(filterLongWords(["Rose","Lily","Lotus","Sunflower"],4));
 
 //     Modify the jsfiddle on the map/filter/reduce slide ( https://jsfiddle.net/keithlevi/e6kqvx2f/9/ ) as follows:
 
@@ -233,5 +184,5 @@ console.log("Expected output of findLongestWord([\"hi\",\"hola\",\"hello\",\"bon
    myFunctionTest("bonjour", function(){return findLongestWord(["hi","hola","hello","bonjour"]);} )); 
 
 
-console.log("Expected output of filterLongWords([\"apple\",\"orange\",\"bee\",\"hon\"],4) is [\"apple\",\"orange\"]] and  " +
-   myFunctionTest(["apple","orange"], function(){return filterLongWords(["apple","orange","bee","hon"],4);} ));
+console.log("Expected output of filterLongWords([\"Rose\",\"Lily\",\"Lotus\",\"Sunflower\"],4) is [\"apple\",\"orange\"]] and  " +
+   myFunctionTest(["Lotus","Sunflower"], function(){return filterLongWords([""],4);} ));
