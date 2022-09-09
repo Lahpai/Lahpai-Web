@@ -96,7 +96,7 @@ function filterLongWords(arr, n){
     return newArr;
 }
 
-console.log(filterLongWords(["hi","hola","hello","bonjour"],4));
+console.log(filterLongWords(["Rose","Lily","Lotus","Sunflower"],4));
 
 //     Modify the jsfiddle on the map/filter/reduce slide ( https://jsfiddle.net/keithlevi/e6kqvx2f/9/ ) as follows:
 
