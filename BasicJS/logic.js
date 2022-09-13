@@ -180,8 +180,8 @@ myFunctionTest("cba", function(){return reverse("abc");} ));
 
 
 console.log("Expected output of findLongestWord([\"Rose\",\"Lily\",\"Tulip \",\"Sunflower\"]) is \"Sunflower\" and  " +
-myFunctionTest("Sunflower", function(){return findLongestWord(["Rose","Lily","Tulip ","Sunflower"]);} )); 
+myFunctionTest("Sunflower", function(){return findLongestWord(["Rose","Lily","Tulip","Sunflower"]);} )); 
 
 
 console.log("Expected output of filterLongWords([\"Rose\",\"Lily\",\"Tulip \",\"Sunflower\"],4) is [\"Lotus\",\"Sunflower\"]] and  " +
-myFunctionTest(["Lotus","Sunflower"], function(){return filterLongWords(["Rose","Lily","Tulip ","Sunflower"],4);} ));
+myFunctionTest(["Lotus","Sunflower"], function(){return filterLongWords(["Rose","Lily","Tulip","Sunflower"],4);} ));
