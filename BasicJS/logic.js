@@ -184,4 +184,4 @@ myFunctionTest("Sunflower", function(){return findLongestWord(["Rose","Lily","Tu
 
 
 console.log("Expected output of filterLongWords([\"Rose\",\"Lily\",\"Tulip \",\"Sunflower\"],4) is [\"Lotus\",\"Sunflower\"]] and  " +
-myFunctionTest(["Lotus","Sunflower"], function(){return filterLongWords(["Rose","Lily","Tulip","Sunflower"],4);} ));
+myFunctionTest(["Tulip","Sunflower"], function(){return filterLongWords(["Rose","Lily","Tulip","Sunflower"],4);} ));
