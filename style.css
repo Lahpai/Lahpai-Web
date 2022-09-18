@@ -50,7 +50,7 @@ body {
     max-width: 100%;
 }
 
-#main > ol > a:link, a:visited {
+#main > a:link, a:visited {
     background-color: white;
     color: black;
     border: 2px solid #dbf0f9;
