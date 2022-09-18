@@ -1,0 +1,104 @@
+body {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    max-width: 100%;
+    margin: auto;
+    background:#f3fafd;
+    padding: 10px;
+}
+#banner {
+    grid-area: banner;
+}
+
+#banner > img {
+    width:"10px";
+    height:"10px";
+     /* position: relative;
+  padding: 100px 20px; */
+} 
+#profile {
+    grid-area: profile;
+    text-align: center;
+    
+}
+
+#profile > img {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin-top: -75px;
+}
+
+#nav {
+    grid-area: nav;
+    background-color:  #dbf0f9;
+    padding: 15px;
+    line-height: 200%;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 14px;
+    
+}
+
+#main{
+    grid-area: main;
+ 
+    max-width: 100%;
+}
+
+#main > ol > a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid #dbf0f9;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 0;
+  }
+  
+  a:hover, a:active {
+    background-color: #b1dff2;
+    color: white;
+  }
+
+#footer {
+    grid-area: footer;
+    font-size: smaller;
+    margin-left: auto;
+}
+
+
+@media screen and (min-width:600px){
+    #container {
+        display: grid;
+        grid-template-areas: 
+            'banner banner banner banner banner'
+            'profile profile profile profile profile'
+            'nav nav nav nav nav'
+            'main main main main main'
+            'footer footer footer footer footer';
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    #container{
+        font-size: larger;
+        display: flex;
+        flex-direction: column;
+    }
+    #nav{
+        display: flex;
+        flex-direction: column;
+    }
+    #nav > a{
+        padding: 15%;
+    }
+}
