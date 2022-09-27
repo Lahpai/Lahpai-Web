@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+    
+</head>
+<body>
+    <form action="/result" method="post">
+        Name : <input type="text" id="name" name="name" /> <br><br>
+        Age&nbsp; : &nbsp;&nbsp;<input type="age" id="age" name="age" /><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <table>
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+        <% for (item in cookies) { %>
+            <tr>
+                <td><%= item %></td>
+                <td><%= cookies [item] %></td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>
