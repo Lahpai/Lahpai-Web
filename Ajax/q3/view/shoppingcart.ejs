@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Cart</title>
+    </head>
+<body> 
+    <ol>
+
+       <%products.forEach((i)=> {%>
+            <li>
+                <label for="name">Name :</label> <%=i.Name%> <br> 
+                <label for="price">Price</label> <%=i.Price%> <br> 
+                <label for="quantity">Quantity : </label> <%=i.Quantity%> 
+        <%}) %>    
+
+    </ol>
+    
+</body>
+</html>
+
+    
